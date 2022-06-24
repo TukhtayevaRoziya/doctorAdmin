@@ -17,22 +17,6 @@ export const login = (body) => async (dispatch) => {
   }
 };
 
-// export const loadUser = (path) => async (dispatch) => {
-//   try {
-//     const res = await api.get(`/${path}`);
-
-//     dispatch({
-//       type: USER_LOADED,
-//       payload: res.data,
-//     });
-//     dispatch(checkToken(3600));
-//   } catch (err) {
-//     dispatch({
-//       type: LOGIN_FAIL,
-//     });
-//   }
-// };
-
 export const logout = () => (dispatch) => {
   dispatch({ type: LOGOUT });
 };

@@ -42,14 +42,14 @@ const Login = () => {
       autoComplete="off"
     >
       <FieldHelpers
-        label="Foydalanuvchi nomi"
-        name="userName"
-        message="Iltimos Foydalanuvchi nomi qatorini yo'ldiring!"
-      />
-      <FieldHelpers
         label="Parol"
         name="password"
-        message="Iltimos parol nomi qatorini yo'ldiring!"
+        message="Iltimos Parol nomi qatorini yo'ldiring!"
+      />
+      <FieldHelpers
+        label="Diplom Id"
+        name="diplomId"
+        message="Iltimos Diplom Id qatorini yo'ldiring!"
         inp={false}
       />
 

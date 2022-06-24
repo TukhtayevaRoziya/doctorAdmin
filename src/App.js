@@ -3,6 +3,10 @@ import { useEffect } from "react";
 import { SidebarBody } from "./component/sidebar/Layout";
 import authToken from "./utility/authToken";
 import store from "./redux/store";
+import PrivateRoute from './utility/PrivateRoute';
+import Login from './component/login/Login';
+import { Route } from 'react-router-dom';
+import { Routes } from 'react-router-dom';
 
 function App() {
   useEffect(() => {
@@ -22,11 +26,11 @@ function App() {
         <Route path="/" element={<Login />} />
         <Route
           path="dashboard/*"
-          element={ */}
-            {/* // <PrivateRoute> */}
+          element={
+            <PrivateRoute> */}
               <SidebarBody />
-            {/* // </PrivateRoute> */}
-          {/* }
+             {/* </PrivateRoute>
+          }
         />
       </Routes> */}
     </div>
