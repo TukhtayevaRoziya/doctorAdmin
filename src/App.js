@@ -1,9 +1,6 @@
 import "./App.css";
 import { useEffect } from "react";
-import { Route, Routes } from "react-router-dom";
-import Login from "./component/login/Login";
 import { SidebarBody } from "./component/sidebar/Layout";
-import PrivateRoute from "./utility/PrivateRoute";
 import authToken from "./utility/authToken";
 import store from "./redux/store";
 
@@ -20,18 +17,18 @@ function App() {
 
   return (
     <div className="App">
-      <Routes>
+      {/* <Routes>
         <Route index element={<Login />} />
         <Route path="/" element={<Login />} />
         <Route
           path="dashboard/*"
-          element={
-            <PrivateRoute>
+          element={ */}
+            {/* // <PrivateRoute> */}
               <SidebarBody />
-            </PrivateRoute>
-          }
+            {/* // </PrivateRoute> */}
+          {/* }
         />
-      </Routes>
+      </Routes> */}
     </div>
   );
 }
